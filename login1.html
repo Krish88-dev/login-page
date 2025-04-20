@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page - hotel booking .com</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+.login-container {
+    background: rgba(58, 58, 67, 0.95); 
+    padding: 2.5rem 3.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(230, 224, 224, 0.47);
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+    backdrop-filter: blur(6px);
+  }
+
+
+    @keyframes fadeIn {
+      from {
+        transform: scale(0.95);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .login-container h2 {
+      margin-bottom: 1.5rem;
+      color: white; 
+      font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+      outline: none;
+    }
+
+    .forgot {
+      display: block;
+      margin: -0.5rem 0 1rem;
+      text-align: right;
+      font-size: 0.9rem;
+    }
+
+    .forgot a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.4rem 0;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.02);
+    }
+
+    .social-login {
+      margin-top: 1rem;
+    }
+
+    .social-login button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .google {
+      background-color: #db4437;
+    }
+
+    .google:hover {
+      background-color: #d5301a;
+    }
+
+    .facebook {
+      background-color: #3b5998;
+    }
+
+    .facebook:hover {
+      background-color: #2d4373;
+    }
+
+    .social-login button i {
+      font-size: 1.2rem;
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to hotel booking.com</h2>
+    <form>
+      <input type="text" placeholder="Enter Your Username" required />
+      <input type="password" placeholder="Enter Your Password" required />
+      <div class="forgot"><a href="#">Forgot Password?</a></div>
+      <button type="submit">Login</button>
+      <button type="submit" style="background-color:#28a745;">Create New Account</button>
+    </form>
+    <div class="social-login">
+      <button class="google">
+        <i class="fab fa-google"></i>
+        <a href="https://accounts.google.com">Login with Google</a>
+      </button>
+      <button class="facebook">
+        <i class="fab fa-facebook-f"></i>
+        <a href="https://www.facebook.com">Login with Facebook</a>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
